@@ -100,9 +100,9 @@ const Signup = () => {
     if (pics.type === "image/jpeg" || pics.type === "image/png") {
       const data = new FormData();
       data.append("file", pics);
-      data.append("upload_preset", "chat-app");
-      data.append("cloud_name", "deygwvoak");
-      fetch("https://api.cloudinary.com/v1_1/deygwvoak", {
+      data.append("upload_preset", "chat app");
+      data.append("cloud_name", "dxfrtdmhv");
+      fetch("https://api.cloudinary.com/v1_1/dxfrtdmhv/image/upload", {
         method: "post",
         body: data,
       })
@@ -116,7 +116,8 @@ const Signup = () => {
           console.log(err);
           setPicLoading(false);
         });
-    } else {
+    }
+    else {
       toast({
         title: "Please Select an Image!",
         status: "warning",
